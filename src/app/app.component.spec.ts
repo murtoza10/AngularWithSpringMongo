@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AngularWithSpringMongo'`, () => {
+  it(`should have as title 'EcommerceWithAngular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('AngularWithSpringMongo');
+    expect(app.title).toEqual('EcommerceWithAngular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('AngularWithSpringMongo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('EcommerceWithAngular app is running!');
   });
 });
